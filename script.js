@@ -52,22 +52,30 @@
 
 let interval;
 
+setInterval(function(){
+  document.getElementById("tokyo").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'Asia/Tokyo', timeStyle:'medium', hourCycle:'h24'});
+  document.getElementById("beijing").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'Asia/Shanghai', timeStyle:'medium', hourCycle:'h24'});
+  document.getElementById("moscow").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'Europe/Moscow', timeStyle:'medium', hourCycle:'h24'});
+  document.getElementById("paris").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'Europe/Paris', timeStyle:'medium', hourCycle:'h24'});
+  document.getElementById("london").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'Europe/London', timeStyle:'medium', hourCycle:'h24'});
+  document.getElementById("newYork").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'America/New_York', timeStyle:'medium', hourCycle:'h24'});
+  document.getElementById("losAngeles").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles', timeStyle:'medium', hourCycle:'h24'});
+},1000)
+
 interval = setInterval(function(){
   var date = new Date();
   var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
   document.getElementById("clock").innerHTML = time
   document.getElementById("time").innerHTML = date
-  document.getElementById("tokyo").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles', timeStyle:'medium', hourCycle:'h24'});
 },1000)
 
-function Tokyo(){
+function Change(country){
   clearInterval(interval);
   interval = null;
   interval = setInterval(function(){
     var date = new Date();
     var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-    document.getElementById("clock").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles', timeStyle:'medium', hourCycle:'h24'});
-    document.getElementById("tokyo").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles', timeStyle:'medium', hourCycle:'h24'});
-    document.getElementById("time").innerHTML =  new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles'});
+    document.getElementById("clock").innerHTML =  new Date().toLocaleString("en-US",{timeZone: country, timeStyle:'medium', hourCycle:'h24'});
+    document.getElementById("time").innerHTML =  new Date().toLocaleString("en-US",{timeZoneName: "long", timeZone: country});
   },1000)
 }

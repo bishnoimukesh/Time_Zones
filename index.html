@@ -66,20 +66,13 @@
       <div id="time_section" class="w1" style="margin-top: 0px;">
         <div class="w90 tr">
           <ul id="favs" class="tbx">
-            <li id="favbox-0" onclick="Tokyo()"><a><span>Tokyo</span><br><span id="tokyo">08:16</span></a>
-            </li>
-            <li id="favbox-1"><a href="Beijing" id="time-1">Beijing<br><span class="time"><span class="mon">1</span><span class="mon">7</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
-            </li>
-            <li id="favbox-2"><a href="Moscow" id="time-2">Moscow<br><span class="time"><span class="mon">1</span><span class="mon">2</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
-            </li>
-            <li id="favbox-3"><a href="Paris" id="time-3">Paris<br><span class="time"><span class="mon">1</span><span class="mon">0</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
-            </li>
-            <li id="favbox-4"><a href="London" id="time-4">London<br><span class="time"><span class="mon">0</span><span class="mon">9</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
-            </li>
-            <li id="favbox-5"><a href="New_York" id="time-5">New York<br><span class="time"><span class="mon">0</span><span class="mon">4</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
-            </li>
-            <li id="favbox-6"><a href="Los_Angeles" id="time-6">Los Angeles<br><span class="time"><span class="mon">0</span><span class="mon">1</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
-            </li>
+            <li id="favbox-0" onclick="Change('Asia/Tokyo')"><a><span class="tokyo">Tokyo</span><br><span class="tokyo" id="tokyo">00:00:00</span></a></li>
+            <li id="favbox-0" onclick="Change('Asia/Shanghai')"><a><span class="beijing">Beijing</span><br><span class="beijing" id="beijing">00:00:00</span></a></li>
+            <li id="favbox-0" onclick="Change('Europe/Moscow')"><a><span class="moscow">Moscow</span><br><span class="moscow" id="moscow">00:00:00</span></a></li>
+            <li id="favbox-0" onclick="Change('Europe/Paris')"><a><span class="paris">Paris</span><br><span class="paris" id="paris">00:00:00</span></a></li>
+            <li id="favbox-0" onclick="Change('Europe/London')"><a><span class="london">London</span><br><span class="london" id="london">00:00:00</span></a></li>
+            <li id="favbox-0" onclick="Change('America/New_York')"><a><span class="newYork">New York</span><br><span class="newYork" id="newYork">00:00:00</span></a></li>
+            <li id="favbox-0" onclick="Change('America/Los_Angeles')"><a><span class="losAngeles">Los Angeles</span><br><span class="losAngeles" id="losAngeles">00:00:00</span></a></li>
           </ul>
         
         </div>
@@ -87,7 +80,7 @@
 
       <section id="top_cities_tmp">
         <div class="cloud w90 d">
-          <a href="Abu_Dhabi" class="s14">Abu Dhabi</a>
+          <a onclick="Change('Asia/Dubai')" class="s14">Abu Dhabi</a>
           <a href="Addis_Ababa" class="s9">Addis Ababa</a>
           <a href="Amsterdam" class="s14">Amsterdam</a>
           <a href="Antananarivo" class="s12">Antananarivo</a>

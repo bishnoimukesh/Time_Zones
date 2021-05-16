@@ -15,6 +15,17 @@ a:link {
   text-decoration: none;
   padding: 4px 9px;
 }
+
+#top_cities_tmp a {
+  color: white;
+  text-decoration: none;
+  padding: 4px 9px;
+}
+#top_cities_tmp span:hover {
+  color: white!important;
+  text-decoration: none !important;
+  background-color: #c35;
+}
 a:visited {
   color: none;
   text-decoration: none;
@@ -77,6 +88,10 @@ blockquote {
   padding-right: 25px; */
   line-height: 1.7;
 }
+
+/*#top_cities_tmp a {
+  color: white;
+}*/
 section{
   color: #999;
 }
@@ -224,4 +239,25 @@ footer{
 }
 .pom a:hover{
   color:white!important;
+}
+.tokyo {
+  color: white;
+}
+.beijing {
+  color: white;
+}
+.moscow {
+  color: white;
+}
+.paris {
+  color: white;
+}
+.london {
+  color: white;
+}
+.newYork {
+  color: white;
+}
+.losAngeles {
+  color: white;
 }
