@@ -1,0 +1,17 @@
+#cvwr {
+    position: relative;
+    padding: 20px 0 40px 0;
+}
+.w90 {
+    margin-left: 5%;
+    width: 90%;
+}
+div{
+  float: left;
+  clear: both;
+}
+body, select, input, textarea {
+    font: 18px/26px 'Times New Roman',Times,FreeSerif,serif;
+    color: #333;
+  }
+  

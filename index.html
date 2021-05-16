@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+  <meta charset="utf-8">
+  <title>Time.is</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <div id="mainwrapper">
+    <div id="top">
+      <!-- <script>
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        document.getElementById("top").innerHTML= time;
+      </script> -->
+      <div class="lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <h2><a href="https://time.is/" target="_top" title="Time.is" class="head-time">Time.is</a></h2>
+            </div>
+            <div class="col-md-10 py-3" style="display: flex;justify-content: flex-end;transition: 0.5s;">
+              <form id="qbox" class="tr" action="/" method="get" autocomplete="off" accept-charset="UTF-8" onsubmit="return T_I.submit(gob('q').value)">
+             <!--  <input type="text" id="q" name="q" value="" tabindex="1" maxlength="100" accesskey="3" class="txtin blr mout" onfocus="t_search(1)" onblur="t_search(0)" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onkeydown="arrows('susdiv',event)" onkeyup="sg(this.value,'susdiv')">
+              <div id="susdiv" class="susdiv" onmouseover="setfocus('susdiv')" onmouseout="losefocus('susdiv')"></div> -->
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup"></label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-search"></i></div>
+                  </div>
+                  <input type="text" class="form-control cdm" id="inlineFormInputGroup" placeholder="Search">
+                </div>
+              </div>
+            </form>
+            <div class="icon-nav tr">
+              <a href="#nav" onclick="return toggle_menu(1)" title="menu" class="p-0">
+                <div style="margin-top:2px;width:100%;border-top:5px solid #aaa;padding:3px 0 2px 0;border-bottom:5px solid #aaa;margin-bottom:5px; width:30px"></div>
+                <div style="width:100%;border-top:5px solid #aaa;padding:2px 0;margin-bottom:4px; width:30px"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="container" id="clock" style="width:100%;position:relative;display: flex;justify-content: center;align-items: center;font-size: 250px;font-weight: 900;letter-spacing:20px;font-family: Montserrat,Arial,Helvetica,sans-serif;">
+        
+      </div><br><br>
+
+      <div class="w90" id="time" style="display: flex;justify-content: flex-end;font-size: 30px;">
+        <!-- <script type="text/javascript">
+          var x = setInterval(function(){
+            var date = new Date();
+            document.getElementById("time").innerHTML = date
+          },1000)
+        </script> -->
+      </div>
+      <div id="time_section" class="w1" style="margin-top: 0px;">
+        <div class="w90 tr">
+          <ul id="favs" class="tbx">
+            <li id="favbox-0" onclick="Tokyo()"><a><span>Tokyo</span><br><span id="tokyo">08:16</span></a>
+            </li>
+            <li id="favbox-1"><a href="Beijing" id="time-1">Beijing<br><span class="time"><span class="mon">1</span><span class="mon">7</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
+            </li>
+            <li id="favbox-2"><a href="Moscow" id="time-2">Moscow<br><span class="time"><span class="mon">1</span><span class="mon">2</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
+            </li>
+            <li id="favbox-3"><a href="Paris" id="time-3">Paris<br><span class="time"><span class="mon">1</span><span class="mon">0</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
+            </li>
+            <li id="favbox-4"><a href="London" id="time-4">London<br><span class="time"><span class="mon">0</span><span class="mon">9</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
+            </li>
+            <li id="favbox-5"><a href="New_York" id="time-5">New York<br><span class="time"><span class="mon">0</span><span class="mon">4</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
+            </li>
+            <li id="favbox-6"><a href="Los_Angeles" id="time-6">Los Angeles<br><span class="time"><span class="mon">0</span><span class="mon">1</span>:<span class="mon">0</span><span class="mon">6</span></span></a>
+            </li>
+          </ul>
+        
+        </div>
+      </div><br>
+
+      <section id="top_cities_tmp">
+        <div class="cloud w90 d">
+          <a href="Abu_Dhabi" class="s14">Abu Dhabi</a>
+          <a href="Addis_Ababa" class="s9">Addis Ababa</a>
+          <a href="Amsterdam" class="s14">Amsterdam</a>
+          <a href="Antananarivo" class="s12">Antananarivo</a>
+          <a href="Athens" class="s14">Athens</a>
+          <a href="Auckland,_New_Zealand" class="s15">Auckland</a>
+          <a href="Baghdad" class="s7">Baghdad</a>
+          <a href="Bangkok" class="s7">Bangkok</a>
+          <a href="Barcelona" class="s11">Barcelona</a>
+          <a href="Beijing" class="s1 bold">Beijing</a>
+          <a href="Berlin" class="s10">Berlin</a>
+          <a href="Bogotá" class="s6">Bogotá</a>
+          <a href="Boston" class="s14">Boston</a>
+          <a href="Brussels" class="s13">Brussels</a>
+          <a href="Buenos_Aires" class="s3 bold">Buenos Aires</a>
+          <a href="Cairo" class="s6">Cairo</a>
+          <a href="Cape_Town" class="s8">Cape Town</a>
+          <a href="Caracas" class="s9">Caracas</a>
+          <a href="Chicago" class="s5 bold">Chicago</a>
+          <a href="Delhi" class="s2 bold">Delhi</a>
+          <a href="Dhaka" class="s4 bold">Dhaka</a>
+          <a href="Dubai" class="s4 bold">Dubai</a>
+          <a href="Dublin" class="s13">Dublin</a>
+          <a href="Frankfurt" class="s14">Frankfurt</a>
+          <a href="Guangzhou" class="s8">Guangzhou</a>
+          <a href="Hanoi" class="s12">Hanoi</a>
+          <a href="Havana" class="s10">Havana</a>
+          <a href="Helsinki" class="s15">Helsinki</a>
+          <a href="Hong_Kong" class="s5 bold">Hong Kong</a>
+          <a href="Honolulu" class="s16">Honolulu</a>
+          <a href="Istanbul" class="s2 bold">Istanbul</a>
+          <a href="Jakarta" class="s5 bold">Jakarta</a>
+          <a href="Karachi" class="s2 bold">Karachi</a>
+          <a href="Kathmandu" class="s11">Kathmandu</a>
+          <a href="Kinshasa" class="s6 bold">Kinshasa</a>
+          <a href="Kuala_Lumpur" class="s11">Kuala Lumpur</a>
+          <a href="Kyiv" class="s9">Kyiv</a>
+          <a href="Lagos" class="s5 bold">Lagos</a>
+          <a href="Las_Vegas" class="s15">Las Vegas</a>
+          <a href="Lima" class="s6">Lima</a>
+          <a href="London" class="s1 bold">London</a>
+          <a href="Los_Angeles" class="s1 bold">Los Angeles</a>
+          <a href="Luanda" class="s9">Luanda</a>
+          <a href="Madrid" class="s8">Madrid</a>
+          <a href="Manila" class="s3 bold">Manila</a>
+          <a href="Mecca" class="s12">Mecca</a>
+          <a href="Mexico_City" class="s1 bold">Mexico City</a>
+          <a href="Miami" class="s16">Miami</a>
+          <a href="Milan" class="s12">Milan</a>
+          <a href="Moscow" class="s2 bold">Moscow</a>
+          <a href="Mumbai" class="s3 bold">Mumbai</a>
+          <a href="New_Delhi" class="s16">New Delhi</a>
+          <a href="New_York" class="s1 bold">New York</a>
+          <a href="Nuuk" class="s16">Nuuk</a>
+          <a href="Osaka" class="s10">Osaka</a>
+          <a href="Oslo" class="s15">Oslo</a>
+          <a href="Paris" class="s3 bold">Paris</a>
+          <a href="Prague" class="s13">Prague</a>
+          <a href="Reykjavik" class="s16">Reykjavik</a>
+          <a href="Rio_de_Janeiro" class="s7">Rio de Janeiro</a>
+          <a href="Riyadh" class="s8">Riyadh</a>
+          <a href="Rome" class="s10">Rome</a>
+          <a href="Saint_Petersburg" class="s7">Saint Petersburg</a>
+          <a href="San_Francisco" class="s13">San Francisco</a>
+          <a href="Santiago" class="s7">Santiago</a>
+          <a href="Seoul" class="s4 bold">Seoul</a>
+          <a href="Shanghai" class="s3 bold">Shanghai</a>
+          <a href="Shenzhen" class="s9">Shenzhen</a>
+          <a href="Singapore" class="s4 bold">Singapore</a>
+          <a href="Stockholm" class="s12">Stockholm</a>
+          <a href="Sydney" class="s4 bold">Sydney</a>
+          <a href="São_Paulo" class="s2 bold">São Paulo</a>
+          <a href="Taipei" class="s5 bold">Taipei</a>
+          <a href="Tehran" class="s6">Tehran</a>
+          <a href="Tel_Aviv" class="s13">Tel Aviv</a>
+          <a href="Tokyo" class="s1 bold">Tokyo</a>
+          <a href="Toronto" class="s8">Toronto</a>
+          <a href="Vancouver" class="s10">Vancouver</a>
+          <a href="Vienna" class="s11">Vienna</a>
+          <a href="Warsaw" class="s11">Warsaw</a>
+          <a href="Washington,_D.C." class="s15">Washington, D.C.</a>
+          <a href="Yangon" class="s8">Yangon</a> <br><br>
+          <br>
+          <a class="s6" href="UTC">UTC</a>
+          <a class="s6" href="GMT">GMT</a>
+          <a class="s6" href="CET">CET</a><br>
+          <div>
+            <a class="s6" href="PT">Pacific Time</a>
+            <a class="s6" href="MT">Mountain Time</a>
+            <a class="s6" href="CT">Central Time</a>
+            <a class="s6" href="ET">Eastern Time</a>
+            <a class="s6" href="China_Standard_Time">China Standard Time</a>
+            <a class="s6" href="IST">India Standard Time</a>
+            <br><br><br>
+          </div>
+        </div>
+              <section id="quote" style="padding:none">
+                <blockquote>"As I would not be a slave, so I would not be a master. This expresses my idea of democracy."</blockquote>
+                <cite>Abraham Lincoln</cite>
+              </section>
+            <footer class="w90 py-5">
+              <div id="menutransformer">
+                <nav id="nav">
+                  <div class="columns">
+                    <h3><a href="/" class="logo" style='font-size:50px;font-weight: bold;color: white;'>Time.is</a> <span class="slogan" style="font-size:40px;font-weight: bold;color: white;"><span>- </span>exact time for any time zone</span></h3>
+                    <div id="menulinks">
+                      <div class="row">
+                        <div class="col-md-2 column">
+                          <ul>
+                            <li><a href="/" class="chosen">Exact time now</a></li>
+                            <li><a href="/compare">Time here&there</a></li>
+                            <li><a href="/time_zones">Time zones</a></li>
+                            <li><a href="/DST_2021">Daylight Saving Time</a></li>
+                            <li><a href="/just">Just time</a></li>
+                            <li><a href="/calendar">Calendar</a></li>
+                            <li id="aub"><a href="sound">Sound</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 column">
+                          <ul>
+                            <li><a href="/apps">Apps</a></li>
+                            <li><a href="/widgets">Widgets</a></li>
+                            <li><a href="/time_zone_news">Time zone news</a></li>
+                            <li><a href="/mailing_list">Newsletter</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 column">
+                          <ul>
+                            <li><a href="/UTC">UTC</a></li>
+                            <li><a href="/Unix_time_now">Unix clock</a></li>
+                            <li><a href="/Unix_time_converter">Unix time converter</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 column">
+                          <ul>
+                            <li><a href="/customize">Customize</a></li>
+                            <li><a href="/FAQ">FAQ</a></li>
+                            <li><a href="/howto">How to use Time.is</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                          <div id="follow_app" class="">
+                      <div id="follow">
+                        <div>Follow us</div>
+                        <a href="https://www.facebook.com/exact.time.is" target="_blank" rel="nofollow,noreferer,noopener" class="facebook" title="Follow Time.is on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/Time_is" target="_blank" class="twitter" title="Follow Time.is on Twitter"><i class="fab fa-twitter"></i></a>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    </nav>
+                    <nav class="navbar navbar-default" id="navbardef" style="">
+                      <ul class="hzlist" style="color: #999">
+                        <li class="first"><a href="/advertise">Advertise</a></li>
+                        <li class="last"><a href="/terms_of_use">Terms of use</a></li>
+                        <li><a href="/terms_of_use#privacy_policy">Privacy policy</a></li>
+                      </ul>
+                    </nav><br>
+                    <section>
+                      Time.is displays exact, official atomic clock time for any time zone (more than 7 million locations) in 52 languages.<br>
+                      Automated access is prohibited. Support for cookies and JavaScript is required.<br>
+                      Copyright © 2009-2021 Digitz.no. All rights reserved.
+                    </section><br>
+                    <div id="footerlangs">
+                      <a href="/?lang=en" title="English">What time is it?</a>
+                      <a href="/?lang=zh" title="Chinese (simplified) / 中文">几点了？</a>
+                      <a href="/?lang=hi" title="Hindi / हिंदी">क्या समय हुआ है?</a>
+                      <a href="/?lang=es" title="Spanish / español">¿Qué hora es?</a>
+                      <a href="/?lang=fr" title="French / français">Quelle heure est-il?</a>
+                      <a href="/?lang=ar" title="Arabic / العربية">كم الساعة</a>
+                      <a href="/?lang=bn" title="Bengali / বাংলা">এখন কয়টা বাজে?</a>
+                      <a href="/?lang=ru" title="Russian / русский">Который час?</a>
+                      <a href="/?lang=pt_br" title="Portuguese (Brazil) / português (Brasil)">Que horas são?</a>
+                      <a href="/?lang=id" title="Indonesian / bahasa Indonesia">Jam berapa?</a>
+                      <a href="/?lang=ur" title="Urdu / اردو زبان">؟ےہ اوہ تقو ایک</a>
+                      <a href="/?lang=de" title="German / Deutsch">Wieviel Uhr ist es?</a>
+                      <a href="/?lang=ja" title="Japanese / 日本語">今何時ですか？</a>
+                      <a href="https://saatkac.info.tr/" title="Turkish / Türkçe">Saat kaç?</a>
+                      <a href="/?lang=ta" title="Tamil / தமிழ்">என்ன நேரம்?</a>
+                      <a href="/languages">≫ choose language</a>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                    
+                  </body>
+                  </html>

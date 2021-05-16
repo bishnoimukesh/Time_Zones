@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  text-align: justify;
+  position: relative;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 100px;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+  padding: 4px 9px;
+}
+a:visited {
+  color: none;
+  text-decoration: none;
+  background-color: orange;
+}
+a:hover {
+  color: white!important;
+  text-decoration: none !important;
+  background-color: #c35;
+}
+a:active {
+  color: black;
+  text-decoration: underline;
+  background-color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.w1 li{
+  text-align: right;
+  display: inline-block;
+  float:right;
+  padding:5px;
+}
+.tbx a {
+    display: block;
+    margin: 0 0 10px 10px;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    background: grey;
+    text-decoration: none;
+}
+#quote {
+    text-align: center;
+    background-color: #75a;
+    color: #fff;
+    padding: 160px 5%;
+}
+blockquote {
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    direction: ltr;
+}
+#navbardef{
+  padding-bottom:0;
+  padding-right:5px;
+  color: #999;
+}
+
+#top_cities_tmp{
+  background-color: #333;
+  padding-top: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
+  line-height: 1.7;
+}
+section{
+  color: #999;
+}
+
+
+#top_cities_tmp a.s1, #top_cities_tmp a.s2 {
+  margin: 2%;
+    color: #000;
+    background: #fff;
+}
+#top_cities_tmp a.s1:hover, #top_cities_tmp a.s2:hover{
+  background: #000;
+  color: #fff;
+}
+.cloud {
+    text-align: center;
+    line-height: 40px;
+    line-height: 1.7;
+}
+
+
+.w90 {
+    margin-left: 5%;
+    width: 90%;
+}
+.s1, .s11, .s16, .s10{
+  font-size: 25px;
+  font-weight: 400;
+  padding:5px;
+}
+.s2, .s7, .s12{
+  font-size: 30px;
+  font-weight: 600px;
+  padding:5px;
+}
+.s3, .s8, .s15{
+  font-size: 20px;
+  font-weight: 200;
+  padding:5px;
+}
+.s4, .s9, .s14{
+  font-size: 30px;
+  font-weight: 600;
+  padding:5px;
+}
+.s5, .s13{
+  font-size: 40px;
+  font-weight: bolder;
+  padding:5px;
+  /* background-color: white; */
+}
+.s6{
+  font-size: 30px;
+  font-style: italic, bold;
+  padding: 5px;
+}
+.chosen{
+  background: #fff!important;
+  color: #000!important;
+}
+.chosen:hover{
+  background: #000!important;
+  color: #fff!important;
+}
+.column{
+  font-size: 18px;
+}
+.column li{
+  margin-bottom: 5px;
+}
+/*
+#clock{
+  float: right;
+} */
+#navbardef li{
+  display: inline;
+}
+
+footer{
+  background-color: #333;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+#footerlangs a:link, #footerlangs a:visited, .d #footerlangs a:link, .d #footerlangs a:visited {
+    color: #999;
+}
+.cdm:focus{
+  width: 600px !important;
+  transform-style: width 1s all;
+}
+.head-time{
+  text-transform: uppercase;
+  padding: 20px!important;
+  color: #fff;
+  background: #c35;
+  font:26px/20px Montserrat,Arial,sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-time:visited{
+  background: #c35;
+  color: #fff;
+}
+.head-time:hover {
+  opacity: 0.8;
+}
+.facebook{
+  color: black;
+  background: white!important;
+}
+.facebook:hover{
+  color: white;
+  background: #3A5A99!important;
+}
+.twitter{
+  color: black!important;
+  background: white!important;
+}
+.twitter:hover{
+  color: white;
+  background: #0CAEED!important;
+}
+.clickable{
+  cursor: pointer;
+}
+.solm {
+  color: black;
+  border: 1px solid black;
+  padding: 10px!important;
+}
+.solm:hover {
+  border: none;
+}
+.solm:hover span {
+  background: #CC3355;
+  color: white!important;
+}
+.solm span{
+  font-weight: bold;
+  color: #CC3355;
+}
+.pom a{
+  color:black!important;
+}
+.pom a:hover{
+  color:white!important;
+}
