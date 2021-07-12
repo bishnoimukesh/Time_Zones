@@ -50,7 +50,6 @@ ul {
 
 .w1 li{
   text-align: right;
-  display: inline-block;
   float:right;
   padding:5px;
 }
@@ -68,13 +67,7 @@ ul {
     color: #fff;
     padding: 160px 5%;
 }
-blockquote {
-    font-size: 50px;
-    line-height: 70px;
-    text-align: center;
-    color: #fff;
-    direction: ltr;
-}
+
 #navbardef{
   padding-bottom:0;
   padding-right:5px;
@@ -84,14 +77,9 @@ blockquote {
 #top_cities_tmp{
   background-color: #333;
   padding-top: 25px;
-  /* padding-left: 25px;
-  padding-right: 25px; */
   line-height: 1.7;
 }
 
-/*#top_cities_tmp a {
-  color: white;
-}*/
 section{
   color: #999;
 }
